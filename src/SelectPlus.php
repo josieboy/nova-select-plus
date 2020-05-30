@@ -179,7 +179,7 @@ class SelectPlus extends Field
     protected function fillAttribute(NovaRequest $request, $requestAttribute, $model, $attribute)
     {
         // returning a function allows this to run after the model has been saved (which is crucial if this is a new model)
-        return function () use ($request, $requestAttribute, $model, $attribute) {
+       /* return function () use ($request, $requestAttribute, $model, $attribute) {
             $values = collect(json_decode($request[$requestAttribute], true));
 
             $keyName = ($this->relationshipResource)::newModel()->getKeyName();
@@ -193,7 +193,7 @@ class SelectPlus extends Field
             }
 
             $model->{$attribute}()->sync($syncValues);
-        };
+        }; */
     }
 
     public function mapToSelectionValue(Collection $models)
