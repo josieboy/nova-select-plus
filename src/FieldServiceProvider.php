@@ -1,6 +1,6 @@
 <?php
 
-namespace ZiffMedia\NovaSelectPlus;
+namespace Josieboy\NovaSelectPlus;
 
 use Illuminate\Support\Facades\Route;
 use Laravel\Nova\Http\Requests\NovaRequest;
